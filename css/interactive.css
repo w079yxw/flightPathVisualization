@@ -1,0 +1,22 @@
+body { font: 12px Arial;}
+
+path {
+  stroke: steelblue;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 0;
+  shape-rendering: crispEdges;
+}
+
+.lineAxis path,
+.lineAxis line {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}

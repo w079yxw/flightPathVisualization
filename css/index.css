@@ -1,0 +1,13 @@
+#header {
+    margin: 30px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial;
+}
+
+.card {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}

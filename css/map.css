@@ -1,0 +1,111 @@
+.label{
+  font-weight: bold;
+}
+
+/*path{*/
+  /*stroke: #90EE90;*/
+  /*stroke-width: 0.8px;*/
+/*}*/
+
+/*div.tooltip{*/
+  /*position: absolute;*/
+  /*text-align: left;*/
+  /*width: 200px;*/
+  /*height: 80px;*/
+  /*padding: 10px;*/
+  /*font-size: 12px;*/
+  /*font-weight: bold;*/
+  /*background-color: lightblue;*/
+  /*border: 8px;*/
+  /*border-radius: 8px;*/
+  /*pointer-events: none;*/
+/*}*/
+
+div.li{
+  text-align: left;
+}
+/*.counties {*/
+  /*fill: none;*/
+  /*stroke: #fff;*/
+  /*stroke-linejoin: round;*/
+/*}*/
+
+.airport-cell {
+  fill: none;
+  stroke: none;
+  stroke-opacity: 0.1;
+  pointer-events: all;
+}
+
+.airport-arc0 {
+  fill: none;
+}
+.airport-arc1 {
+  fill: none;
+  /*transition: fill .4s ease;*/
+  /*opacity:1;*/
+}
+
+.airport:hover .airport-arc0 {
+  stroke: lightblue;
+  stroke-width: 3px;
+}
+.airport:hover .airport-arc1 {
+stroke-width: 3px;
+  -webkit-animation-name: flight-delay; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+
+  animation-name: flight-delay;
+  animation-iteration-count: infinite;
+stroke: darkblue;
+}
+
+
+.land {
+  fill: #ddd;
+}
+
+.state-borders {
+  fill: none;
+  stroke: #fff;
+}
+
+@keyframes flight-delay {
+  0% {stroke: darkblue;fill:none}
+  10% {stroke: yellow;fill:none}
+  20% {stroke: firebrick;fill:none}
+  30% {stroke: orange;fill:none}
+  40% {fill: lightsteelblue;fill:none}
+  50% {stroke: greenyellow;fill:none}
+  60% {stroke: green;fill:none}
+  70% {stroke: darkmagenta;fill:none}
+  80% {stroke: darkslateblue;fill:none}
+  90% {stroke: salmon;fill:none}
+  100% {stroke: darkblue;fill:none}
+}
+
+.on-schedule{
+  fill: lightblue;
+
+}
+.delay{
+  fill: darkblue;
+  -webkit-animation-name: legend-delay; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: legend-delay;
+  animation-iteration-count: infinite;
+}
+
+@keyframes legend-delay {
+  0% {fill: darkblue;}
+  10% {fill: yellow;}
+  20% {fill: firebrick;}
+  30% {fill: orange;}
+  15% {fill: palegreen;}
+  40% {fill: lightsteelblue;}
+  60% {fill: green;}
+  70% {fill: darkmagenta;}
+  80% {fill: darkslateblue;}
+  90% {fill: salmon;}
+  100% {fill: darkblue;}
+}
